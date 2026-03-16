@@ -1,20 +1,20 @@
 {
-  "name": "Thaly Nails Studio",
-  "short_name": "Thaly Nails",
+  "name": "Bella Mile",
+  "short_name": "Bella Mile",
   "description": "Uñas y belleza - Tu espacio de cuidado personal",
-  "start_url": "/thaly-nails-studio/",
-  "scope": "/thaly-nails-studio/",
+  "start_url": "/bella-mile/",
+  "scope": "/bella-mile/",
   "display": "standalone",
   "background_color": "#ec4899",
   "theme_color": "#ec4899",
   "icons": [
     {
-      "src": "/thaly-nails-studio/icons/icon-192x192.png",
+      "src": "/bella-mile/icons/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/thaly-nails-studio/icons/icon-512x512.png",
+      "src": "/bella-mile/icons/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }

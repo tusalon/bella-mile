@@ -1,22 +1,22 @@
-// sw.js - Service Worker para Thaly Nails Studio
+// sw.js - Service Worker para Bella Mile
 
-const CACHE_NAME = 'thaly-nails-v1';
+const CACHE_NAME = 'bella-mile-v1';
 const urlsToCache = [
-  '/thaly-nails-studio/',
-  '/thaly-nails-studio/index.html',
-  '/thaly-nails-studio/admin.html',
-  '/thaly-nails-studio/admin-login.html',
-  '/thaly-nails-studio/setup-wizard.html',
-  '/thaly-nails-studio/editar-negocio.html',
-  '/thaly-nails-studio/manifest.json',
-  '/thaly-nails-studio/icons/icon-72x72.png',
-  '/thaly-nails-studio/icons/icon-96x96.png',
-  '/thaly-nails-studio/icons/icon-128x128.png',
-  '/thaly-nails-studio/icons/icon-144x144.png',
-  '/thaly-nails-studio/icons/icon-152x152.png',
-  '/thaly-nails-studio/icons/icon-192x192.png',
-  '/thaly-nails-studio/icons/icon-384x384.png',
-  '/thaly-nails-studio/icons/icon-512x512.png'
+  '/bella-mile/',
+  '/bella-mile/index.html',
+  '/bella-mile/admin.html',
+  '/bella-mile/admin-login.html',
+  '/bella-mile/setup-wizard.html',
+  '/bella-mile/editar-negocio.html',
+  '/bella-mile/manifest.json',
+  '/bella-mile/icons/icon-72x72.png',
+  '/bella-mile/icons/icon-96x96.png',
+  '/bella-mile/icons/icon-128x128.png',
+  '/bella-mile/icons/icon-144x144.png',
+  '/bella-mile/icons/icon-152x152.png',
+  '/bella-mile/icons/icon-192x192.png',
+  '/bella-mile/icons/icon-384x384.png',
+  '/bella-mile/icons/icon-512x512.png'
 ];
 
 // ============================================
@@ -108,7 +108,7 @@ self.addEventListener('fetch', event => {
           }
           // Si no hay cache y es imagen, devolver icon por defecto
           if (event.request.url.match(/\.(jpg|jpeg|png|gif|svg|webp)$/)) {
-            return caches.match('/thaly-nails-studio/icons/icon-192x192.png');
+            return caches.match('/bella-mile/icons/icon-192x192.png');
           }
           return new Response('Error de red', { status: 408 });
         });
@@ -138,6 +138,6 @@ self.addEventListener('message', event => {
   }
 });
 
-console.log('✅ Service Worker configurado para Thaly Nails Studio');
+console.log('✅ Service Worker configurado para Bella Mile');
 console.log('📦 Cache:', CACHE_NAME);
 console.log('📄 Archivos a cachear:', urlsToCache.length);
