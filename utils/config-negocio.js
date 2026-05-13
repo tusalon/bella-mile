@@ -180,7 +180,7 @@ window.getMensajeConfirmacion = async function() {
  */
 window.getNtfyTopic = async function() {
     const config = await window.cargarConfiguracionNegocio();
-    return config?.ntfy_topic || 'mile-notificaciones';
+    return config?.ntfy_topic || 'bella-mile';
 };
 
 /**
